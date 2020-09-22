@@ -3,7 +3,7 @@
     <h1>你好</h1>
     <p class="text">
       尊敬的
-      <span style="color: red;">{{memberInfo}}用户</span>，欢迎来到德莱联盟！
+      <span style="color: red;">{{ memberInfo }}用户</span>，欢迎来到德莱联盟！
     </p>
 
     <div class>
@@ -61,8 +61,8 @@ export default {
         description: "2312",
         charge: "v12会员专享",
         permission: 12,
-        userStatus: 2,
-        vipLevel: 12
+        userStatus: 3,
+        vipLevel: 3
       }
     ];
   },
@@ -82,7 +82,11 @@ export default {
       if (r) {
         this.$router.push({
           name: "course",
-          params: { id: e.id, title: e.title }
+          // params: { id: e.id, title: e.title }
+          query: {
+            id: e.id,
+            title: e.title
+          }
         });
       } else {
         alert("权限不足");
@@ -126,4 +130,3 @@ export default {
   }
 }
 </style>
-

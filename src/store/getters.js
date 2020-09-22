@@ -13,5 +13,5 @@ export default {
       default:
         return "普通会员";
     }
-  },
+  }
 };

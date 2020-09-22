@@ -4,19 +4,19 @@
     <div class>
       <section class="user-info">
         <label for class="user-info-label">账号</label>
-        <span class="user-info-value">{{userInfo.account}}</span>
+        <span class="user-info-value">{{ userInfo.account }}</span>
       </section>
       <section class="user-info">
         <label for class="user-info-label">身份</label>
-        <span class="user-info-value">{{memberInfo}}</span>
+        <span class="user-info-value">{{ memberInfo }}</span>
       </section>
       <section class="vip-list">
         <ul class="container">
           <li v-for="(item, index) in vipList" :key="index" class="list-item">
-            <div class="item-name">{{item.name}}</div>
+            <div class="item-name">{{ item.name }}</div>
             <div class="item-content">
               <span class="item-content__price">
-                {{item.charge}}元
+                {{ item.charge }}元
                 <span class="item-content__date">/ 30天</span>
               </span>
               <button class="item-content__btn" @click="buy(item)">购买</button>
@@ -195,4 +195,3 @@ export default {
   }
 }
 </style>
-

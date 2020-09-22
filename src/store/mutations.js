@@ -5,5 +5,5 @@ export default {
   setMemberInfo(state, v) {
     state.userStatus = v.userStatus;
     state.vipLevel = v.vipLevel;
-  },
+  }
 };
